@@ -1,4 +1,9 @@
+
+
 # 🚧️ Monorepo ReactJs & React Native 🚧
+by Fabrizio Serial
+
+![alt text](./headerimage.jpg "image Title")
 
 This repository is a monorepo project which contains two frontends - one in React Native and the other in React Js. The unique aspect of this project is the use of React Native for Web, which allows developers to write code in React Native and compile it for both mobile and web without having to write the same code twice.
 ## Project structure
