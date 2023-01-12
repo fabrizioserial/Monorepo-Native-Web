@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo-native-web/app",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.1.2",
+    "@react-navigation/native-stack": "^6.9.8",
+    "@reduxjs/toolkit": "^1.9.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.2"
+  }
+}

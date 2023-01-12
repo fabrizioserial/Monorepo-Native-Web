@@ -1,0 +1,28 @@
+{
+  "name":"monorepo-native-web",
+  "version":"0.0.1",
+  "private":true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-web"
+    ]
+  },
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+    "android:metro": "yarn workspace @monorepo-native-web/mobile start",
+    "android:start": "yarn workspace @monorepo-native-web/mobile android",
+    "android:studio": "yarn workspace @monorepo-native-web/mobile studio",
+    "ios:metro": "yarn workspace @monorepo-native-web/mobile start",
+    "ios:start": "yarn workspace @monorepo-native-web/mobile ios",
+    "ios:xcode": "yarn workspace @monorepo-native-web/mobile xcode",
+    "web:start": "yarn workspace @monorepo-native-web/web start",
+    "web:build": "yarn workspace @monorepo-native-web/web build"
+  }
+}
